@@ -62,3 +62,8 @@ function followPath(path, paths) {
 	}
 
 }
+
+function memoize( fn ) {
+	var chache = {};
+	return function memoized(start, length) {
+		 if (!chache[`${start}:${length}
